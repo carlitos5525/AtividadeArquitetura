@@ -1,0 +1,20 @@
+### Listar as folhas
+GET https://localhost:5001/api/folha/listar
+
+### Buscar folha
+GET https://localhost:5001/api/folha/buscar/12312312318/10/2022
+
+### Filtrar folha
+GET https://localhost:5001/api/folha/filtrar/10/2022
+
+### Cadastrar uma folha
+POST https://localhost:5001/api/folha/cadastrar
+Content-Type: application/json
+
+{
+    "valorHora" : 50,
+    "quantidadeHoras" : 100,
+    "funcionarioid" : 1,
+    "mes" : 10,
+    "ano" : 2022
+}

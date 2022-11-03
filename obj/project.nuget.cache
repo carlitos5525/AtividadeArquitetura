@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RkZc9fVldDhFF1GGUGEpvuhzQS8WWKE6x1yrzCOjvpE4hXoy2gJnn6FDpG+FGVy4Av4S4YMfAwHXTLJIu0pRag==",
+  "dgSpecHash": "yq0LD2fmcnR1SVaK8UPLQZT4F4tEoYaMvFV2mYqM3uCghkDLuh5K2rU/R1IpJYcJ33yxzdTSUNP/JlYXkxWygQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\carlos.mayer\\downloads\\desenvolvimentovisualquinta-master\\api_folhas\\API_FOlhas.csproj",
+  "projectFilePath": "C:\\Users\\carlos.mayer\\Downloads\\DesenvolvimentoVisualQuinta-master\\API_Folhas\\API_FOlhas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\carlos.mayer\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\carlos.mayer\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

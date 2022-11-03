@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using API_Folhas.Models;
 using Microsoft.AspNetCore.Mvc;
+using API_FOlhas.IteratorFuncionario;
 
 namespace API_Folhas.Controllers
 {
@@ -22,6 +23,52 @@ namespace API_Folhas.Controllers
         [HttpGet]
         public IActionResult Listar() =>
             Ok(_context.Funcionarios.ToList());
+
+        //GET: /api/funcionario/contar
+        [Route("contar")]
+        [HttpGet]
+        public IActionResult Contar()
+        {
+            var lista_funcionarios = _context.Funcionarios.ToList();
+            ConcreteCollection colecao = new ConcreteCollection(lista_funcionarios);
+
+            Iterator iterator = colecao.CreateIterator();
+
+            return Ok(colecao.Count);
+        }
+
+        //GET: /api/funcionario/encontrar/1
+        [Route("encontrar/{id}")]
+        [HttpGet]
+        public IActionResult Encontrar([FromRoute] int id)
+        {
+            var lista_funcionarios = _context.Funcionarios.ToList();
+
+            Funcionario funcionario_encontrado = null;
+            
+            //cria uma coleção e vincula ela com a lista de funcionários
+            ConcreteCollection colecao = new ConcreteCollection(lista_funcionarios);
+
+            //cria o iterator
+            Iterator iterator = colecao.CreateIterator();
+
+            for(Funcionario funcionario = iterator.First(); !iterator.IsDone; funcionario = iterator.Next())
+            {
+                if(funcionario.FuncionarioId == id)
+                {
+                    funcionario_encontrado = funcionario;
+                }
+            }
+
+            if(funcionario_encontrado == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                return Ok(funcionario_encontrado);
+            }
+        }
 
         // POST: /api/funcionario/cadastrar
         [Route("cadastrar")]

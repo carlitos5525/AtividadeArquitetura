@@ -6,12 +6,13 @@ namespace API_FOlhas.IteratorFuncionario
     //ConcreteAggregate
     public class ConcreteCollection : IAbstractCollection
     {
+        private List<Funcionario> listaFuncionarios;
 
         public ConcreteCollection(List<Funcionario> listaFuncionarios)
         {
             this.listaFuncionarios = listaFuncionarios;
         }
-        private List<Funcionario> listaFuncionarios;
+        
         //Cria o Iterator
         public Iterator CreateIterator()
         {
@@ -25,7 +26,7 @@ namespace API_FOlhas.IteratorFuncionario
         }
 
         //Adiciona itens na coleção
-        public void AddCliente(Funcionario funcionario)
+        public void AddFuncionario(Funcionario funcionario)
         {
             listaFuncionarios.Add(funcionario);
         }

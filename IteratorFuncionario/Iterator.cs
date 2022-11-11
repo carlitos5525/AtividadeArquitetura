@@ -32,16 +32,6 @@ namespace API_FOlhas.IteratorFuncionario
             }
         }
 
-        Funcionario IAbstractIterator.First()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        Funcionario IAbstractIterator.Next()
-        {
-            throw new System.NotImplementedException();
-        }
-
         // Verifica se a iteração terminou
         public bool IsDone
         {

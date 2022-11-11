@@ -52,6 +52,7 @@ namespace API_Folhas.Controllers
             //cria o iterator
             Iterator iterator = colecao.CreateIterator();
 
+            //Iterando a lista utilizando o Iterator até encontrar o funcionario com aquele ID
             for(Funcionario funcionario = iterator.First(); !iterator.IsDone; funcionario = iterator.Next())
             {
                 if(funcionario.FuncionarioId == id)

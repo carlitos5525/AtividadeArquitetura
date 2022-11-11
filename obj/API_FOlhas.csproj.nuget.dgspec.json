@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\carlos.mayer\\Downloads\\DesenvolvimentoVisualQuinta-master\\API_Folhas\\API_FOlhas.csproj": {}
+    "C:\\Users\\carlos.mayer\\downloads\\desenvolvimentovisualquinta-master\\api_folhas\\API_FOlhas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\carlos.mayer\\Downloads\\DesenvolvimentoVisualQuinta-master\\API_Folhas\\API_FOlhas.csproj": {
+    "C:\\Users\\carlos.mayer\\downloads\\desenvolvimentovisualquinta-master\\api_folhas\\API_FOlhas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\carlos.mayer\\Downloads\\DesenvolvimentoVisualQuinta-master\\API_Folhas\\API_FOlhas.csproj",
+        "projectUniqueName": "C:\\Users\\carlos.mayer\\downloads\\desenvolvimentovisualquinta-master\\api_folhas\\API_FOlhas.csproj",
         "projectName": "API_FOlhas",
-        "projectPath": "C:\\Users\\carlos.mayer\\Downloads\\DesenvolvimentoVisualQuinta-master\\API_Folhas\\API_FOlhas.csproj",
+        "projectPath": "C:\\Users\\carlos.mayer\\downloads\\desenvolvimentovisualquinta-master\\api_folhas\\API_FOlhas.csproj",
         "packagesPath": "C:\\Users\\carlos.mayer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\carlos.mayer\\Downloads\\DesenvolvimentoVisualQuinta-master\\API_Folhas\\obj\\",
+        "outputPath": "C:\\Users\\carlos.mayer\\downloads\\desenvolvimentovisualquinta-master\\api_folhas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\carlos.mayer\\AppData\\Roaming\\NuGet\\NuGet.Config"
